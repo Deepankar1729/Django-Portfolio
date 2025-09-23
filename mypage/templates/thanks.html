@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thank You</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body class="bg-light d-flex justify-content-center align-items-center vh-100">
+
+  <div class="text-center">
+    <div class="card shadow p-5 border-0" style="max-width: 550px; border-radius: 1.5rem;">
+      
+      <!-- Icon -->
+      <div class="text-success mb-3">
+        <i class="bi bi-heart-fill display-1"></i>
+      </div>
+
+      <!-- Thank You message -->
+      <h1 class="h3 text-success mb-3">Thank You!</h1>
+      <p class="text-muted mb-4">
+        Thank you for taking the time to explore my work.  
+        If you’d like to collaborate, discuss opportunities, or just say hello, feel free to  
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=deepankar217@gmail.com&su=Let%27s%20Connect&body=Hi%2C%20I%27d%20love%20to%20connect%20and%20discuss%20opportunities." target="_blank"  class="text-decoration-none fw-semibold">contact me</a>  
+        or connect on  
+        <a href="https://www.linkedin.com/in/deepankar-majumdar-46322a2a1/" target="_blank" class="text-decoration-none fw-semibold">LinkedIn</a>.
+      </p>
+
+      <!-- Action Button -->
+      <a href="{% url 'home' %}" class="btn btn-outline-success">
+        <i class="bi bi-house-door"></i> Back to Home
+      </a>
+    </div>
+  </div>
+</body>
+</html>
