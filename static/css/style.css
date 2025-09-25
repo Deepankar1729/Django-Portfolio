@@ -97,8 +97,6 @@ h4 {
     height: 150%;
 }
     
-
-
 .circle {
     width: 20rem;
     height: 23rem;
@@ -129,8 +127,99 @@ h4 {
 
 .about-content p {
     margin-bottom: 2rem;
+    font-size: 1rem;
 }
 
+/* Education Section */
+.education-container {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.education-item {
+    overflow: hidden;
+    width: 20rem;
+    margin: 1rem;
+    background: #2c2c6c;
+    border-radius: 1.5rem;
+    padding: 1rem 1rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth animation */
+    cursor: pointer; 
+}
+
+.education-item h1 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.education-item p {
+    line-height: 20px;
+    font-size: 1rem;
+}
+
+.education-item:hover {
+    transform: translateY(-10px) scale(1.05); /* lift and zoom */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3),
+                0 6px 6px rgba(0, 0, 0, 0.2); /* shadow effect */
+}
+.education-img {
+    width: 100%;
+    margin-top: 0;
+    width: 300px; /* adjust as needed */
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+/* Experience Section */
+#experience {
+    margin: 3rem 0;
+}
+
+.experience-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;           
+    gap: 2rem;                 
+    max-width: 1000px;         
+    margin: auto;              
+    padding: 1rem;
+}
+
+.experience-left {
+    flex: 1 1 40%;             
+    max-width: 400px;          
+    display: flex;
+    justify-content: center;   
+}
+
+.experience-left img {
+    width: 80%;                
+    border-radius: 1rem;
+}
+
+.experience-right {
+    flex: 1 1 50%;             
+    max-width: 500px;          
+}
+.experience-content h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1.1rem; /* increased space between h4 and p */
+}
+
+.experience-content h2 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.experience-content p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.6;
+}
 
 /* Skills Section */
 #skills {
@@ -220,7 +309,7 @@ h4 {
 
 .projects-item p {
     line-height: 20px;
-    font-size: .9rem;
+    font-size: 1rem;
 }
 
 .projects-item:hover {
@@ -409,7 +498,7 @@ ul li a:hover {
 }
 
 .buttons a,
-#hireme {
+#hireme, #cert {      /* for removing underlines from buttons */
     text-decoration: none;
 }
 

@@ -22,6 +22,8 @@
             <ul class="flex">
                 <li><a href="#home" class="t-white roboto">Home <i class="fa-solid fa-house"></i></a></li>
                 <li><a href="#about" class="t-white roboto">About Me <i class="fa-solid fa-user"></i></a></li>
+                <li><a href="#education" class="t-white roboto">Education <i class="fa-solid fa-graduation-cap"></i></a></li>
+                <li><a href="#experience" class="t-white roboto">Experience <i class="fa-solid fa-briefcase"></i></a></li>
                 <li><a href="#skills" class="t-white roboto">Skills <i class="fa-solid fa-code"></i></a></li>
                 <li><a href="#Projects" class="t-white roboto">Projects <i class="fas fa-project-diagram"></i></a></li>
                 <li><a href="#Contact" class="t-white roboto">Contact <i class="fa-solid fa-rocket"></i></a></li>
@@ -30,7 +32,6 @@
     </nav>
 
         
-
     <!-- Home Section -->
     <section id="home" class="flex s-around sw-80 m-auto">
         <div class="home-left flex items-center">
@@ -70,11 +71,68 @@
                     <p class="t-white poppins">I'm seeking entry-level job opportunities where I can contribute, grow and be a part of innovative projects.</p>
                     <a class="btn " id="hireme"
                         href="https://mail.google.com/mail/?view=cm&fs=1&to=deepankar217@gmail.com&su=Job%20Opportunity&body=Hi%2C%20I%27d%20like%20to%20discuss%20potential%20opportunities." 
-                        target="_blank" ">Hire Me</a>
+                        target="_blank" ">Hire Me</a> 
+                    {% comment %} <a class="btn live " id="cert"
+                        href="k" 
+                        target="_blank" ">My Certifications</a> {% endcomment %}
                 </div>
             </div>
         </div>
     </section>
+
+<!-- Education Section -->
+<section id="education">
+    <h1 class="t-center my-2 t-white f-2">Education</h1>
+    <div class="education-container flex s-center">
+        
+        <div class="education-item flex f-col s-center items-center">
+            <img src="{% static 'images/cap.png' %}" alt="University" class="education-img mb-2" />
+            <h1 class="t-white poppins">Bachelor of Technology in CSE</h1>
+            <p class="t-white poppins">Raja Balwant Singh Engineering Technical Campus Agra</p>
+            <p class="t-white poppins">2025</p>
+        </div>
+
+        <div class="education-item flex f-col s-center items-center">
+            <img src="{% static 'images/inter.png' %}" alt="Intermediate" class="education-img mb-2" />
+            <h1 class="t-white poppins">Intermediate</h1>
+            <p class="t-white poppins">Delhi Public School Agra</p>
+            <p class="t-white poppins">2020</p>
+        </div>
+
+        <div class="education-item flex f-col s-center items-center">
+            <img src="{% static 'images/high.png' %}" alt="High School" class="education-img mb-2" />
+            <h1 class="t-white poppins">High School</h1>
+            <p class="t-white poppins">St. Francis Convent School Agra</p>
+            <p class="t-white poppins">2018</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience">
+    <h1 class="t-center my-2 t-white f-2">Experience</h1>
+    <div class="experience-container flex s-around w-80 m-auto">
+
+        <!-- Left side: Image -->
+        <div class="experience-left flex s-center items-center">
+            <img src="{% static 'images/Logo.png' %}" alt="Work Experience" style="width: 52%; border-radius: 1rem;">
+        </div>
+
+        <!-- Right side: Content -->
+        <div class="experience-right flex">
+            <div class="experience-content">
+                <h2 class="t-white poppins">Vocational Trainee</h2>
+                <h4 class="t-white poppins">Engineers India Limited</h4>
+                <p class="t-white poppins">Developed a project for predicting employee attrition using Python and Machine Learning.</p>
+                <p class="t-white poppins">Gained hands-on experience in Python Libraries like Pandas, NumPy, Scikit-learn, Seaborn.</p>
+                <p class="t-white poppins">Evaluated multiple machine learning algorithms like Logistic Regression, Random Forest, Decision tree to select the best fit.</p>
+                <p class="t-white poppins"><strong>Duration :</strong> 1 July 2024 –  21 Jul 2024</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 
     <!-- Skills Section -->
 <section id="skills">
@@ -143,9 +201,9 @@
         <h1 class=" t-center my-2 t-white f-2">Projects</h1>
         <div class="projects-container flex s-center">
             <div class="projects-item flex f-col s-center items-center">
-                <img src="{% static 'images/4.jpg' %}" alt="Bookstore Analysis" class="project-img mb-2" />
+                <img src="{% static 'images/book.png' %}" alt="Bookstore Analysis" class="project-img mb-2"/>
                 <h1 class="t-white poppins">Bookstore Analysis using SQL</h1>
-                <p class="t-white poppins">Analyzed bookstore data using basic and advanced SQL queires to optimize business operations and improve customer satisfaction.</p>
+                <p class="t-white poppins">Analyzed bookstore data using basic and advanced SQL queries to optimize business operations and improve customer satisfaction.</p>
                 <div class="buttons flex s-around">
                     <a href="https://github.com/Deepankar1729/Bookstore-analysis"
                         target="_blanks" class="btn mx-1 m-top">GitHub</a>
@@ -154,10 +212,10 @@
                 </div>
             </div>
             <div class="projects-item flex f-col s-center items-center">
-                 <img src="{% static 'images/5.jpg' %}" alt="Sales Performance Dashboard"
+                 <img src="{% static 'images/sales.png' %}" alt="Sales Performance Dashboard"
                  class="project-img mb-2" />
                 <h1 class="t-white poppins">Sales Performance Dashboard using Excel</h1>
-                <p class="t-white poppins">Developed a dynamic sales dashboard in Excel using pivot tables, charts, conditional formatting, and VBA macros.</p>
+                <p class="t-white poppins">Developed a dynamic sales dashboard in Excel using pivot tables, charts, VBA macros etc.</p>
                 <div class="buttons flex s-around">
                     <a href="https://github.com/Deepankar1729/Sales-Performance-Dashboard" target="_blanks"
                         class="btn mx-1 m-top">GitHub</a>
@@ -165,17 +223,18 @@
                         Link</a> {% endcomment %}
                 </div>
             </div>
-                        <div class="projects-item flex f-col s-center items-center">
-                 <img src="{% static 'images/6.jpg' %}" alt="Mobile sales" class="project-img mb-2" />
+            <div class="projects-item flex f-col s-center items-center">
+                 <img src="{% static 'images/mobile.png' %}" alt="Mobile sales" class="project-img mb-2" />
 
                 <h1 class="t-white poppins">Mobile Sales Dashboard using Power BI</h1>
                 <p class="t-white poppins">Developed an interactive Power BI dashboard to analyze mobile sales performance.</p>
                 <div class="buttons flex s-around">
-                    <a href="https://github.com/Deepankar1729/Mobile-Sales-Dashboard" target="_blanks"
+                    <a href="https://github.com/Deepankar1729/Sales-Performance-Dashboard" target="_blanks"
                         class="btn mx-1 m-top">GitHub</a>
                     {% comment %} <a href="#" target="_blanks" class="btn m-top live">Live
                         Link</a> {% endcomment %}
                 </div>
+
             </div>
 
          </div>
@@ -218,6 +277,8 @@
         <ul class="flex s-center w-80 m-auto my-2 res">
             <li><a href="#home" class="poppinss">Home</a></li>
             <li><a href="#about" class="poppinss">About</a></li>
+            <li><a href="#education" class="poppinss">Education</a></li>
+            <li><a href="#experience" class="poppinss">Experience</a></li>
             <li><a href="#skills" class="poppinss">Skills</a></li>
             <li><a href="#Projects" class="poppinss">Projects</a></li>
             <li><a href="#Contact" class="poppinss">Contact</a></li>
